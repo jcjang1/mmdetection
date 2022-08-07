@@ -1,7 +1,6 @@
-### An example of customized dataset
+### Custom Dataset 예시
 
-Assume the annotation is in a new format in text files.
-The bounding boxes annotations are stored in text file `annotation.txt` as the following
+`annotation.txt` 파일에 아래와 같은 format으로 image 정보가 저장되어 있을 경우...
 
 ```
 #
@@ -19,7 +18,7 @@ The bounding boxes annotations are stored in text file `annotation.txt` as the f
 30 40 50 60 3
 ```
 
-We can create a new dataset in `mmdet/datasets/my_dataset.py` to load the data.
+ `mmdet/datasets/my_dataset.py` 파일을 만들어 아래 code를 통해 custom dataset을 mmdetection data로 사용할 수 있다.
 
 ```python
 import mmcv
@@ -71,7 +70,7 @@ class MyDataset(CustomDataset):
 
 ```
 
-Then in the config, to use `MyDataset` you can modify the config as the following
+위에서 생성한 함수로 dataset을 만들면 아래 방법으로 적용시킬 수 있다.
 
 ```python
 dataset_A_train = dict(
