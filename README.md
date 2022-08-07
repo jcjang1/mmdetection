@@ -1,10 +1,9 @@
 ## 2가지 train 방법
 
-Using the function above, users can successfully convert the annotation file into json format, then we can use `CocoDataset` to train and evaluate the model.
-
 ## Prepare a config
 
-The second step is to prepare a config thus the dataset could be successfully loaded. Assume that we want to use Mask R-CNN with FPN, the config to train the detector on balloon dataset is as below. Assume the config is under directory `configs/balloon/` and named as `mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py`, the config is as below.
+## case1
+ex) `mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py`으로 train 시키는 방법
 
 ```python
 # The new config inherits a base config to highlight the necessary modification
@@ -39,9 +38,7 @@ load_from = 'checkpoints/mask_rcnn_r50_caffe_fpn_mstrain-poly_3x_coco_bbox_mAP-0
 
 This checkpoint file can be downloaded [here](https://download.openmmlab.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_r50_caffe_fpn_mstrain-poly_3x_coco/mask_rcnn_r50_caffe_fpn_mstrain-poly_3x_coco_bbox_mAP-0.408__segm_mAP-0.37_20200504_163245-42aa3d00.pth)
 
-## Train a new model
-
-To train a model with the new config, you can simply run
+## Case2
 
 ```shell
 python tools/train.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py
@@ -49,7 +46,7 @@ python tools/train.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_ba
 
 For more detailed usages, please refer to the [Case 1](1_exist_data_model.md).
 
-## Test and inference
+### Test and inference
 
 To test the trained model, you can simply run
 
