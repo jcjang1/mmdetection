@@ -1,3 +1,5 @@
+![IMG_KEEP_1659880589](https://user-images.githubusercontent.com/95558633/183294490-26666b91-d254-4659-b668-2bd39836fbf9.jpg)
+
 # 2가지 Train 방법
 
 ## Case1
