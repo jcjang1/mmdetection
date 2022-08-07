@@ -55,6 +55,7 @@ python tools/test.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_bal
 ```
 
 For more detailed usages, please refer to the [Case 1](1_exist_data_model.md).
+![IMG_KEEP_1659881720](https://user-images.githubusercontent.com/95558633/183295084-e135add3-7fdc-458f-9141-d02589aba487.jpg)
 
 
 #
