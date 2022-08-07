@@ -1,7 +1,5 @@
 ## 2가지 train 방법
 
-## Prepare a config
-
 ## case1
 ex) `mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py`으로 train 시키는 방법
 
