@@ -1,6 +1,9 @@
-An example of customized dataset
-Assume the annotation is in a new format in text files. The bounding boxes annotations are stored in text file annotation.txt as the following
+### An example of customized dataset
 
+Assume the annotation is in a new format in text files.
+The bounding boxes annotations are stored in text file `annotation.txt` as the following
+
+```
 #
 000001.jpg
 1280 720
@@ -14,8 +17,11 @@ Assume the annotation is in a new format in text files. The bounding boxes annot
 50 20 40 60 2
 20 40 30 45 2
 30 40 50 60 3
-We can create a new dataset in mmdet/datasets/my_dataset.py to load the data.
+```
 
+We can create a new dataset in `mmdet/datasets/my_dataset.py` to load the data.
+
+```python
 import mmcv
 import numpy as np
 
@@ -62,10 +68,15 @@ class MyDataset(CustomDataset):
 
     def get_ann_info(self, idx):
         return self.data_infos[idx]['ann']
-Then in the config, to use MyDataset you can modify the config as the following
 
+```
+
+Then in the config, to use `MyDataset` you can modify the config as the following
+
+```python
 dataset_A_train = dict(
     type='MyDataset',
     ann_file = 'image_list.txt',
     pipeline=train_pipeline
 )
+```
