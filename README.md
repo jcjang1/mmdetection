@@ -57,6 +57,29 @@ python tools/test.py configs/balloon/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_bal
 For more detailed usages, please refer to the [Case 1](1_exist_data_model.md).
 ![IMG_KEEP_1659881720](https://user-images.githubusercontent.com/95558633/183295084-e135add3-7fdc-458f-9141-d02589aba487.jpg)
 
+#
+#
+#
+
+# Wandb 사용하기
+default_runtime.py에서 hook 안에 WandbLoggerHook을 추가해주고 project, entity, name을 설정하면 wandb에서 학습과정을 시각화수 있다.
+
+```shell
+hooks=[
+    dict(type='TextLoggerHook', interval=500),
+    dict(type='WandbLoggerHook',interval=1000,
+        init_kwargs=dict(
+            project='PROJECT 이름',
+            entity = 'ENTITY 이름',
+            name = '실험할때마다 RUN에 찍히는 이름'
+        ),
+        )
+])
+# 참고 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-4
+```
+
+
+
 
 #
 #
