@@ -1,7 +1,7 @@
 # 2가지 Train 방법
 
-## case1
-ex) `mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py`으로 train 시키는 방법
+## Case1
+### ex) `mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_balloon.py`으로 train 시키는 방법
 
 ```python
 # The new config inherits a base config to highlight the necessary modification
