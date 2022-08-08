@@ -84,6 +84,7 @@ hooks=[
 ```
 #
 ## Case2
+MMDetWandbHook is supported by MMDetection v2.25.0 and above.
 ```
 import wandb
 
