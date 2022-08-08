@@ -81,7 +81,7 @@ hooks=[
         )
 ])
 ```
-# 참고 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-4
+#### 참고 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-4
 
 #
 ## Case2
@@ -111,7 +111,7 @@ log_checkpoint_metadata : (bool) Log the evaluation metrics computed on the vali
 num_eval_images : (int) The number of validation images to be logged. If zero, the evaluation won't be logged. Defaults to 100.
 bbox_score_thr : (float) Threshold for bounding box scores. Defaults to 0.3.
 
-참고 : https://docs.wandb.ai/guides/integrations/mmdetection
+#### 참고 : https://docs.wandb.ai/guides/integrations/mmdetection
 #
 
 
