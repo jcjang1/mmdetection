@@ -66,6 +66,7 @@ For more detailed usages, please refer to the [Case 1](1_exist_data_model.md).
 
 
 # Wandb 사용하기
+## Case1
 default_runtime.py에서 hook 안에 WandbLoggerHook을 추가해주고 project, entity, name을 설정하면 wandb에서 학습과정을 시각화수 있다.
 
 ```shell
@@ -80,9 +81,25 @@ hooks=[
         )
 ])
 # 참고 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-4
+#
+## Case2
 ```
+import wandb
 
 
+config_file = 'mmdetection/configs/path/to/config.py'
+cfg = Config.fromfile(config_file)
+
+cfg.log_config.hooks = [
+    dict(type='TextLoggerHook'),
+    dict(type='MMDetWandbHook',
+         init_kwargs={'project': 'mmdetection'},
+         interval=10,
+         log_checkpoint=True,
+         log_checkpoint_metadata=True,
+         num_eval_images=100,
+         bbox_score_thr=0.3)]
+```
 
 #
 #
