@@ -104,12 +104,12 @@ cfg.log_config.hooks = [
          bbox_score_thr=0.3)]
 ```
 #
-init_kwargs : (dict) A dict passed to wandb.init to initialize a W&B run. \\
-interval : (int) Logging interval (every k iterations). Defaults to 50. \\
-log_checkpoint : (bool) Save the checkpoint at every checkpoint interval as W&B Artifacts. Use this for model versioning where each version is a checkpoint. Defaults to False. \\
-log_checkpoint_metadata : (bool) Log the evaluation metrics computed on the validation data with the checkpoint, along with current epoch as a metadata to that checkpoint. Defaults to True. \\
-num_eval_images : (int) The number of validation images to be logged. If zero, the evaluation won't be logged. Defaults to 100. \\
-bbox_score_thr : (float) Threshold for bounding box scores. Defaults to 0.3. \\
+init_kwargs : (dict) A dict passed to wandb.init to initialize a W&B run.   
+interval : (int) Logging interval (every k iterations). Defaults to 50.   
+log_checkpoint : (bool) Save the checkpoint at every checkpoint interval as W&B Artifacts. Use this for model versioning where each version is a checkpoint. Defaults to False.   
+log_checkpoint_metadata : (bool) Log the evaluation metrics computed on the validation data with the checkpoint, along with current epoch as a metadata to that checkpoint. Defaults to True.   
+num_eval_images : (int) The number of validation images to be logged. If zero, the evaluation won't be logged. Defaults to 100.   
+bbox_score_thr : (float) Threshold for bounding box scores. Defaults to 0.3.   
 
 #### 참고 : https://docs.wandb.ai/guides/integrations/mmdetection
 #
