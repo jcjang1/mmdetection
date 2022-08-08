@@ -112,7 +112,6 @@ cfg.log_config.hooks = [
 *bbox_score_thr* : (float) Threshold for bounding box scores. Defaults to 0.3.   
 
 #### 참고 : https://docs.wandb.ai/guides/integrations/mmdetection
-#
 
 
 
@@ -207,13 +206,9 @@ dataset_A_train = dict(
 
 
 
-#
-#
-#
-#
-#
-#
-#
+------------
+------------
+------------
 
 
 
