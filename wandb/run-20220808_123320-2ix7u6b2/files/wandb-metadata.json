@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.4.188+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-08-08T12:33:23.338695",
+    "startedAt": "2022-08-08T12:33:20.703598",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "/content/drive/MyDrive/use_GitHub/mmdetection/configs/_base_/use_config/faster_rcnn_r50_fpn_1x_coco_config_base.py"
+    ],
+    "state": "running",
+    "program": "tools/train.py",
+    "codePath": "tools/train.py",
+    "host": "a9d1149e8d96",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}
