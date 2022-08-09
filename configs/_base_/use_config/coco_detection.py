@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '/content/Aquarium_dataset/'
+data_root = '/home/ubuntu/Aquarium_dataset/'
 classes = ('fish', 'jellyfish', 'penguin', 'puffin', 'shark', 'starfish', 'stingray')
 
 img_norm_cfg = dict(
@@ -37,15 +37,18 @@ data = dict(
         type=dataset_type,
         ann_file=data_root + 'train/_annotations.coco.json',
         img_prefix=data_root + 'train/',
+        classes=classes,
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
         ann_file=data_root + 'valid/_annotations.coco.json',
         img_prefix=data_root + 'vaild/',
+        classes=classes,
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
         ann_file=data_root + 'test/_annotations.coco.json',
         img_prefix=data_root + 'test/',
+        classes=classes,
         pipeline=test_pipeline))
 evaluation = dict(interval=1, metric='bbox')
