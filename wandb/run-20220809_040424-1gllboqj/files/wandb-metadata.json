@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.13.0-1031-aws-x86_64-with-glibc2.31",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-08-09T04:04:25.180729",
+    "startedAt": "2022-08-09T04:04:24.856681",
+    "docker": null,
+    "gpu": "NVIDIA A10G",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "/home/ubuntu/mmdetection/configs/_base_/use_config/faster_rcnn_r50_fpn_1x_coco_config_base.py"
+    ],
+    "state": "running",
+    "program": "/home/ubuntu/mmdetection/tools/train.py",
+    "codePath": "tools/train.py",
+    "git": {
+        "remote": "https://github.com/jcjang1/mmdetection",
+        "commit": "1ec1bc7aa8c1365b90c9a70b3e936c21b0ccc7b0"
+    },
+    "email": "han940531@naver.com",
+    "root": "/home/ubuntu/mmdetection",
+    "host": "ip-172-31-87-219",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/jcmmdet/bin/python"
+}
